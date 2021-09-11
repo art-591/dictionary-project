@@ -1,3 +1,16 @@
 .DictionaryForm {
   text-align: center;
 }
+
+.DictionaryForm input {
+  width: 200px;
+  height: 25px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.DictionarySearch {
+  padding-bottom: 20px;
+}

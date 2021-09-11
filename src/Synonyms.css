@@ -1,0 +1,16 @@
+ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+li {
+  list-style: none;
+  line-height: 20px;
+  display: inline-block;
+  padding-right: 10px;
+  opacity: 0.6;
+}
+h4 {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.6;
+}
