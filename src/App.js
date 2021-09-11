@@ -6,6 +6,10 @@ export default function App() {
     <div className="App">
       <header className="App-header"></header>
       <DictionarySearch />
+      <div className="coder">
+        Coded by Anel Sanders. Code available on{" "}
+        <a href="https://github.com/art-591/dictionary-project">Github</a>.
+      </div>
     </div>
   );
 }
