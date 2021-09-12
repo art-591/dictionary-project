@@ -5,7 +5,7 @@ import DictionarySearch from "./DictionarySearch";
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">Dictionary App</header>
+      <header className="App-header">Dictionary</header>
       <DictionarySearch defaultKeyword="sunset" />
       <footer className="coder">
         Coded by Anel Sanders. Code available on{" "}

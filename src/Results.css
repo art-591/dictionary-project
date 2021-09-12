@@ -4,6 +4,7 @@ section {
   max-width: 500px;
   padding: 15px;
   border-radius: 6px;
+  opacity: 0.9;
 }
 
 h3 {
