@@ -3,16 +3,16 @@ import "./Phonetics.css";
 
 export default function Phonetics(props) {
   return (
-    <div className="Phonetics">
+    <div className="phonetics">
       <a
-        className="Listen"
+        className="listen"
         rel="noreferrer"
         href={props.phonetics.audio}
         target="_blank"
       >
         <i className="far fa-play-circle"></i>
       </a>
-      <span className="Phonetics-Text">{props.phonetics.text}</span>
+      <span className="phonetics-text">{props.phonetics.text}</span>
     </div>
   );
 }

@@ -1,8 +1,8 @@
-import axios from "axios";
 import React, { useState } from "react";
-import "./DictionarySearch.css";
+import axios from "axios";
 import Results from "./Results";
 import Images from "./Images";
+import "./DictionarySearch.css";
 
 export default function DictionarySearch(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -13,9 +13,11 @@ export default function DictionarySearch(props) {
   function searchWord(response) {
     setResults(response.data[0]);
   }
+
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
   }
+
   function search() {
     // documentation: https://dictionaryapi.dev/
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
@@ -28,6 +30,11 @@ export default function DictionarySearch(props) {
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -37,17 +44,12 @@ export default function DictionarySearch(props) {
     setKeyword(event.target.value);
   }
 
-  function load() {
-    setLoaded(true);
-    search();
-  }
-
   if (loaded) {
     return (
-      <div className="Dictionary">
-        <section className="DictionarySearch">
+      <div className="dictionary">
+        <section className="dictionary-search">
           <h3 className="intro">What word would you like to search?</h3>
-          <form onSubmit={handleSubmit} className="DictionaryForm">
+          <form onSubmit={handleSubmit} className="dictionary-form">
             <input
               type="search"
               autoFocus={true}

@@ -4,11 +4,11 @@ import DictionarySearch from "./DictionarySearch";
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">Dictionary</header>
+    <div className="app">
+      <header className="app-header">Dictionary</header>
       <DictionarySearch defaultKeyword="sunset" />
       <footer className="coder">
-        Coded by Anel Sanders. Code available on{" "}
+        Coded by Anel Sanders,{" "}
         <a href="https://github.com/art-591/dictionary-project">Github</a>.
       </footer>
     </div>

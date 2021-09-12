@@ -6,9 +6,9 @@ import "./Results.css";
 export default function Results(props) {
   if (props.results) {
     return (
-      <div className="Results">
+      <div className="results">
         <section>
-          <h2 className="Word">{props.results.word}</h2>
+          <h2 className="word">{props.results.word}</h2>
           {props.results.phonetics.map(function (phonetics, index) {
             return <Phonetics key={index} phonetics={phonetics} />;
           })}

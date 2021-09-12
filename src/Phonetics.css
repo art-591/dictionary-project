@@ -1,4 +1,4 @@
-.Listen {
+.listen {
   background: purple;
   padding: 5px;
   border-radius: 15px;
@@ -7,17 +7,17 @@
   transition: all 200ms ease-in-out;
 }
 
-.Listen:hover {
+.listen:hover {
   background: white;
   color: purple;
 }
 
-.Phonetics-Text {
+.phonetics-text {
   margin-left: 10px;
   opacity: 0.6;
   font-weight: bold;
 }
 
-.Phonetics {
+.phonetics {
   margin: 10px 0;
 }

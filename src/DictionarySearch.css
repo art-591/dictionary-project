@@ -1,16 +1,17 @@
-.DictionaryForm {
+.dictionary-form {
   text-align: center;
 }
 
-.DictionaryForm input {
-  width: 200px;
+.dictionary-form input {
+  width: 250px;
   height: 25px;
+  text-align: center;
 }
 
 .intro {
   text-align: center;
 }
 
-.DictionarySearch {
+.dictionary-search {
   padding-bottom: 20px;
 }
